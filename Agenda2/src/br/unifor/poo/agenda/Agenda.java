@@ -32,8 +32,8 @@ public class Agenda extends Compromissos implements Runnable {
 	
 	@Override
 	public void detalharCompromissos() {
-		for(Compromissos compromisso: compromisso){
-			System.out.println(compromisso.toString());
+		for(Compromissos compromissos: compromisso){
+			System.out.println(compromissos.toString());
 		}
 	};
 	
@@ -43,6 +43,8 @@ public class Agenda extends Compromissos implements Runnable {
 			for(Compromissos compromisso: compromisso){
 				if(compromisso.getDataCompromisso().after(new Date())){
 					System.out.println("Está atrasado para o compromisso "+compromisso.getDescricao());
+				}else{
+					System.out.println("Você tem um compromisso às "+compromisso.getDataCompromisso());
 				}
 			}
 			try {

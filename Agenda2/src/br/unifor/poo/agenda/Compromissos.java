@@ -33,10 +33,5 @@ public abstract class Compromissos {
 		this.dataCompromisso = dataCompromisso;
 	}
 	
-	@Override
-	public String toString() {
-		return "Compromissos [dataLembrete=" + dataLembrete + ", descricao="
-				+ descricao + "]";
-	}
 }
 

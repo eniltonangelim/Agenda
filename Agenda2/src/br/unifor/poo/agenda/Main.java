@@ -18,7 +18,6 @@ public class Main {
 
 		contato.setNome("Yasmmim Guti");
 		
-		reuniao.setDataCompromisso(new Date());
 		reuniao.addContato(contato);
 		reuniao.setDataLembrete(new Date());
 		reuniao.setDataReuniao(new Date());

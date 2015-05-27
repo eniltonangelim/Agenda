@@ -35,6 +35,13 @@ public class Reuniao extends Compromissos {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Reuniao [localReuniao=" + localReuniao + ", dataReuniao="
+				+ dataReuniao + ", contatos=" + contatos + " dataLembrete=" + getDataLembrete() + ", descricao="
+						+ getDescricao() + "]";
+	}
 	
 	
 }

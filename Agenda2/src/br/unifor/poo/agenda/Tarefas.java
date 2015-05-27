@@ -19,6 +19,12 @@ public class Tarefas extends Compromissos {
 		// TODO Auto-generated method stub
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Tarefas [limiteExecucao=" + limiteExecucao + " dataLembrete=" + getDataLembrete() + ", descricao="
+				+ getDescricao() + "]";
+	}
 	
 	
 }
