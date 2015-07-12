@@ -40,17 +40,16 @@ public class Agenda extends Compromissos implements Runnable {
 	@Override
 	public void run(){
 		while(true){
-			for(Compromissos compromisso: compromisso){
-				if(compromisso.getDataCompromisso().after(new Date())){
-					System.out.println("Está atrasado para o compromisso "+compromisso.getDescricao());
+			for(Compromissos compromissos: compromisso){
+				if(compromissos.getDataCompromisso().after(new Date())){
+					System.out.println("Está atrasado para o compromisso "+compromissos.getDescricao());
 				}else{
-					System.out.println("Você tem um compromisso às "+compromisso.getDataCompromisso());
+					System.out.println("Você tem um compromisso às "+compromissos.getDataCompromisso());
 				}
 			}
 			try {
-				Thread.sleep(6000L);
+				Thread.sleep(6000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

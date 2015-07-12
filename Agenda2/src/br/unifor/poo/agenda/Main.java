@@ -12,10 +12,8 @@ public class Main {
 		
 		contato.setNome("Enilton Angelim");
 		reuniao.addContato(contato);
-
 		contato.setNome("Hythalo Henrique");
 		reuniao.addContato(contato);
-
 		contato.setNome("Yasmmim Guti");
 		
 		reuniao.addContato(contato);
@@ -23,6 +21,7 @@ public class Main {
 		reuniao.setDataReuniao(new Date());
 		reuniao.setDescricao("Java 8");
 		reuniao.setLocalReuniao("Unifor - W. Soares");
+		reuniao.setDataCompromisso(new Date());
 		
 		tarefa.setDescricao("Enilton - Teste");
 		tarefa.setDataLembrete(new Date());
@@ -32,7 +31,7 @@ public class Main {
 		agenda.adicionarCompromissos(tarefa);
 		agenda.adicionarCompromissos(reuniao);
 		agenda.detalharCompromissos();
-		
+		new  Thread(agenda).start();
 				
 	}
 
